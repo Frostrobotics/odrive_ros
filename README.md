@@ -5,7 +5,10 @@ This fork contains a python 3 compatible version of the ROS Odrive interface. Th
 2. Clone this fork into your ROS workspace, probably ~/catkin_ws/src or something similar.
 
 
-3. Go to the directory /usr/local/lib/python3.8/dist-packages/odrive/pyfibre/fibre (if you don't see it look for something similar). 
+3. First login as root user; to do this type sudo -i on the command line.
+
+Then go to the directory /usr/local/lib/python3.8/dist-packages/odrive/pyfibre/fibre (if you don't see it look for something similar). 
+
 In protocol.py add the following code:
 `class ChannelBrokenException(Exception):
 	pass`
@@ -13,11 +16,10 @@ In protocol.py add the following code:
 In `__init__.py` add the following code:
 `from .protocol import ChannelDamagedException, ChannelBrokenException`
 
-You need to login as root user; to do this type sudo -i on the command line.
 
-4. If code doesn't work now, add the following to your .bashrc code (or the corresponding filepaths on your system):
+4. If code doesn't work now, add the following to your .bashrc file (or the corresponding filepaths on your system):
 
-PYTHONPATH=$PYTHONPATH:/home/your_user/catkin_ws/src/odrive_ros/src/odrive_ros/:/usr/local/lib/python3.8/dist-packages/odrive/pyfibre/fibre/
+PYTHONPATH=$PYTHONPATH:/home/__your_user_here__/catkin_ws/src/odrive_ros/src/odrive_ros/:/usr/local/lib/python3.8/dist-packages/odrive/pyfibre/fibre/
 export PYTHONPATH
 
 This assumes installation in Linux and catkin; other installations require slightly different filepaths and commands.
