@@ -10,7 +10,7 @@ In protocol.py add the following code:
 `class ChannelBrokenException(Exception):
 	pass`
 
-In __init__.py add the following code:
+In `__init__.py` add the following code:
 `from .protocol import ChannelDamagedException, ChannelBrokenException`
 
 You need to login as root user; to do this type sudo -i on the command line.
