@@ -1,4 +1,4 @@
-#Info
+# Info
 This fork contains a python 3 compatible version of the ROS Odrive interface. These are the steps for installing properly:
 1. First follow the instructions below to install general Odrive tools.
 2. Clone this fork into your ROS workspace, probably ~/catkin_ws/src or something similar.
