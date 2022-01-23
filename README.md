@@ -19,6 +19,7 @@ You need to login as root user; to do this type sudo -i on the command line.
 
 PYTHONPATH=$PYTHONPATH:/home/your_user/catkin_ws/src/odrive_ros/src/odrive_ros/:/usr/local/lib/python3.8/dist-packages/odrive/pyfibre/fibre/
 export PYTHONPATH
+
 This assumes installation in Linux and catkin; other installations require slightly different filepaths and commands.
 		
 # ARCHIVE NOTICE 2021-02-04
