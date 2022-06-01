@@ -22,6 +22,8 @@ In `__init__.py` add the following code:
 PYTHONPATH=$PYTHONPATH:/home/__your_user_here__/catkin_ws/src/odrive_ros/src/odrive_ros/:/usr/local/lib/python3.8/dist-packages/odrive/pyfibre/fibre/
 export PYTHONPATH
 
+
+
 This assumes installation in Linux and catkin; other installations require slightly different filepaths and commands.
 		
 # ARCHIVE NOTICE 2021-02-04
@@ -41,6 +43,11 @@ Feedback, issues and pull requests welcome.
 You will need the main ODrive Python tools installed.
 
 To install:
+
+Before Cloning the repository run
+```sudo apt-get -y install libusb-1.0-0-dev``` (Ubuntu)
+This will install the missing package on ubuntu.
+
 ```sh
 git clone https://github.com/madcowswe/ODrive
 cd ODrive/tools
