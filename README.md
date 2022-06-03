@@ -49,7 +49,7 @@ Before Cloning the repository run
 This will install the missing package on ubuntu.
 
 ```sh
-git clone https://github.com/Frostrobotics/odrive_ros.git
+git clone https://github.com/madcowswe/ODrive
 cd ODrive/tools
 sudo pip install monotonic # required for py < 3
 
